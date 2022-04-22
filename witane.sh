@@ -2,7 +2,7 @@
 usuario=$(whoami)
 function start_setup() {
     echo -e "Bienvenido a Witane..."
-    echo -e "Estableciendo su pc... (1/2)"
+    echo -e "Estableciendo su pc... (1/1)"
     echo -e "[*] Info : ruta ej. /media/$usuario/ESD-USB/comandos/"
     echo -e "Ruta absoluta de sus comandos: "; read CommandsLocation
     cp $CommandsLocation* /usr/bin/
