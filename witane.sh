@@ -6,10 +6,10 @@ function start_setup() {
     if [ $qCommandsEjecution == "y" ]
     then
         echo -e "Estableciendo su pc... (1/2)"
-        #echo -e "[*] Info : ruta ej. /media/$usuario/ESD-USB/comandos/"
-        #echo -e "Ruta absoluta de sus comandos: "; read CommandsLocation
-        #cp $CommandsLocation* /usr/bin/
-        #chmod +x /usr/bin/*
+        echo -e "[*] Info : ruta ej. /media/$usuario/ESD-USB/comandos/"
+        echo -e "Ruta absoluta de sus comandos: "; read CommandsLocation
+        cp $CommandsLocation* /usr/bin/
+        chmod +x /usr/bin/*
     elif [ $qCommandsEjecution == "n" ]
     then
         echo -e "[*] Fase de comandos finalizada..."
@@ -23,7 +23,7 @@ function start_setup() {
     if [ $devPctI == "y" ]
     then
         echo -e "Estableciendo su pc... (2/2)"
-        #sudo apt install code terminator
+        sudo apt install code terminator
     elif [ $devPctI == "n" ]
     then
         echo -e "[*] Fase de instalacion de paquetes finalizada..."
